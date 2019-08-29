@@ -20,7 +20,7 @@ export default class ItunesController {
         _itunesService.addSubscriber("songs", _draw)
 
         //NOTE Retrieve data
-        _itunesService.getMusicByQuery('ccr')
+        _itunesService.getMusicByQuery()
     }
 
     search(e) {

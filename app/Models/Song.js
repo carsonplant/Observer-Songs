@@ -10,12 +10,12 @@ export default class Song {
 
     get Template() {
         return `
-        <div class="card">
+        <div class="card border">
         <img class="card-img-top " src="${this.albumArt}" alt="Card image cap">
         <div class="card-body">
-            <h5 class="card-title">${this.title}</h5>
+            <h5 class="card-title">${this.title}<button class="btn btn-outline-success">+</button></h5>
             <p class="card-text">${this.collection} price: ${this.price}</p>
-            <audio controls src="${this.preview}"></audio>
+            <audio class="margin" controls src="${this.preview}"></audio>
         </div>
     </div>
         `
